@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments - Knights Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Updated CSS for smaller box size and aggressive background color */
+        .tournament-section {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #d92027; /* Aggressive red background color */
+            color: #fff; /* White text for better contrast */
+            width: 80%; /* Reducing the box size */
+            margin: 15px auto; /* Centering the section */
+            transition: transform 0.3s ease; /* Smooth effect */
+        }
+
+        /* Add scale effect when section is hovered */
+        .tournament-section:hover {
+            transform: scale(1.02); /* Slightly enlarges the section */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adding shadow for effect */
+        }
+
+        .tournament-item {
+            margin: 10px 0;
+        }
+
+        .tournament-item a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff; /* White links */
+            padding: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Effect when a tournament item is hovered */
+        .tournament-item a:hover {
+            background-color: #ffd700; /* Golden background on hover */
+            color: #000; /* Change text to black */
+            border-radius: 5px;
+        }
+
+        /* Add an active effect when the link is clicked */
+        .tournament-item a:active {
+            background-color: #ff5733; /* Bright orange on click */
+            color: #fff; /* White text */
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: #ffd700; /* Golden color for headings */
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect on headings */
+        }
+
+        /* Adding a smooth animation for when headings appear */
+        h2 {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="photos/logo1.png" alt="Knights Club Logo" style="width: 80px; height: 80px; vertical-align: middle;">
+        <h1 style="font-family: 'Georgia', serif; font-weight: bold; display: inline-block;">The Knights Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="stats.html">Player Stats</a></li>
+                <li><a href="tournament.html">Tournaments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Live Tournament Section -->
+        <section id="live-tournament" class="tournament-section">
+            <h2>Live Tournament Updates</h2>
+            <div id="liveTournamentUpdate" class="tournament-item">
+                <a href="live_tournament.html">Stay tuned for live updates from the current tournament!</a>
+            </div>
+        </section>
+
+        <!-- Upcoming Tournaments Section -->
+        <section id="upcoming-tournaments" class="tournament-section">
+            <h2>Upcoming Tournaments</h2>
+            <div class="tournament-list">
+                <article class="tournament-item">
+                    <a href="knights_championship.html">Annual Knights Championship 2024</a>
+                </article>
+
+                <article class="tournament-item">
+                    <a href="junior_knights.html">Junior Knights Chess Championship</a>
+                </article>
+
+                <article class="tournament-item">
+                    <a href="inter_department.html">IIITS Inter-Department Tournament</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Previous Tournaments Section -->
+        <section id="previous-tournaments" class="tournament-section">
+            <h2>Previous Tournaments</h2>
+            <div class="tournament-list">
+                <article class="tournament-item">
+                    <a href="intra_ug.html">Intra UG Chess Tournament 2024</a>
+                </article>
+
+                <article class="tournament-item">
+                    <a href="chess_meetup.html">Chess Meetup 2024</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Knights Club. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

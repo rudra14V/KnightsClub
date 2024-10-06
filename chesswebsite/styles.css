@@ -1,0 +1,336 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    background-image: url('photos/image.png'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    color: #FFFFFF; /* White text for readability */
+}
+
+header {
+    background-color: rgba(255, 0, 0, 0.8); /* Bright red header */
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: maroon;
+    text-shadow: 0px 0px 5px maroon;
+}
+
+main {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ADD8E6; /* Light blue */
+}
+
+/* Updated Scrolling Section */
+.scrolling-section {
+    background: linear-gradient(to right, #FF5733, #FFC300, #FF33FF); /* Multi-color gradient */
+    padding: 30px; /* Increased padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Soft shadow for depth */
+    color: #FFFFFF; /* Change text color to white for better contrast */
+    text-align: center; /* Centered text */
+    margin: 30px 0; /* Increased spacing above and below */
+    overflow: hidden; /* Hide overflow to manage scrolling better */
+}
+
+/* Heading Styles */
+.scrolling-section h2 {
+    font-size: 36px; /* Larger font size for the heading */
+    font-weight: bold; /* Bold text for the heading */
+    color: #FFD700; /* Gold color for the heading */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Glow effect for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Event Items in the Scrolling Section */
+.scrolling-section .event-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for event items */
+    border: 2px solid #FF5733; /* Bright border for event items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside items */
+    margin: 10px; /* Margin between items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.scrolling-section .event-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(255, 87, 34, 0.8); /* Enhanced shadow on hover */
+}
+
+/* Description Text in Event Items */
+.scrolling-section .event-item p {
+    color: #333; /* Dark text color for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 10px; /* Space above the description */
+}
+
+/* Add Space for Scrolling */
+.scrolling-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks for items */
+    padding-bottom: 10px; /* Add some space at the bottom */
+}
+
+/* Slider styles */
+.event-slider {
+    position: relative;
+    overflow: hidden; /* Hide overflow for sliding effect */
+    width: 100%; /* Full width of the container */
+    max-width: 650px; /* Set a max width for the slider */
+    margin: 0 auto; /* Center align */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Glow effect for the slider */
+    border-radius: 8px; /* Rounded corners for the slider */
+}
+
+.event-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.event-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Bright background color for event items */
+    border: 4px solid #FF0000; /* Complete border */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Initial glow effect */
+    border-radius: 8px;
+    margin: 0; /* No margin to fit within the slider */
+    padding: 20px; /* Increased padding for content */
+    min-width: 100%; /* Each item takes full width of the slider */
+    box-sizing: border-box; /* Include padding in width */
+    transition: box-shadow 0.3s ease; /* Smooth transition for glow effect */
+}
+
+.event-item:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.5); /* Glow effect on hover */
+}
+
+.event-image {
+    width: 100%; /* Full width */
+    height: auto; /* Automatic height based on aspect ratio */
+    max-height: 400px; /* Maximum height */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.event-description {
+    color: #000000; /* Dark text color for readability */
+    text-align: center; /* Center align text */
+    font-weight: bold; /* Bold text */
+}
+
+/* Slider buttons */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 0, 0, 0.9); /* Bright red for buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Added padding for larger buttons */
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1; /* On top of events */
+    transition: background-color 0.3s ease; /* Transition for button color */
+}
+
+.slider-button:hover {
+    background-color: rgba(255, 0, 0, 1); /* Change to solid red on hover */
+}
+
+#prevButton {
+    left: 10px; /* Position left */
+}
+
+#nextButton {
+    right: 10px; /* Position right */
+}
+
+/* Team section */
+.team {
+    margin-top: 30px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member-box {
+    background-color: rgba(30, 62, 98, 0.9); /* Darker background for member boxes */
+    border: 2px solid #FF0000; /* Border for member boxes */
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    flex-basis: 200px; /* Fixed width */
+}
+
+.member-box img {
+    width: 150px; /* Reduced image size */
+    height: 150px; /* Reduced image size */
+    border-radius: 50%; /* Circular images */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: white;
+}
+
+
+/* Scrolling Section Styles */
+.knights-club-scrolling {
+    background: linear-gradient(to right, #FFB74D, #FF9800); /* Bright gradient background */
+    border: 2px solid #FF5722; /* Bright border for the section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the section */
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.7); /* Glow effect with shadow */
+    color: #FFFFFF; /* White text for contrast */
+    margin: 20px 0; /* Spacing above and below */
+}
+
+/* Header for the Knights Club Section */
+.knights-club-scrolling h2 {
+    font-family: 'Georgia', serif;
+    font-size: 32px; /* Larger font size for header */
+    margin-bottom: 15px; /* Space below the header */
+    text-align: center; /* Centered text */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow for text */
+}
+
+/* Event Items in the Scrolling Section */
+.knights-club-event-item {
+    background-color: rgba(255, 255, 255, 0.9); /* White background for event items */
+    border: 2px solid #FF9800; /* Orange border */
+    border-radius: 8px;
+    margin: 10px; /* Margin between items */
+    padding: 15px; /* Padding inside items */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Initial shadow for depth */
+}
+
+.knights-club-event-item:hover {
+    box-shadow: 0 0 20px rgba(255, 152, 0, 0.8), 0 0 30px rgba(255, 87, 34, 0.5); /* Enhanced glow effect on hover */
+}
+
+/* Event Image in the Scrolling Section */
+.knights-club-event-image {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Automatic height */
+    max-height: 300px; /* Limit maximum height */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #FF5722; /* Bright border around images */
+}
+
+/* Description Text in Event Items */
+.knights-club-event-description {
+    color: #333333; /* Dark text color for readability */
+    text-align: center; /* Center align description text */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 10px; /* Space above the description */
+}
+
+/* Buttons for Navigation */
+.knights-club-slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 87, 34, 0.8); /* Bright button color */
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Padding for larger buttons */
+    cursor: pointer;
+    border-radius: 50%; /* Circular buttons */
+    z-index: 1; /* Keep buttons above content */
+    transition: background-color 0.3s ease; /* Transition for button color */
+}
+
+.knights-club-slider-button:hover {
+    background-color: rgba(255, 87, 34, 1); /* Change to solid color on hover */
+}
+
+.knights-club-slider-button#prevButton {
+    left: 10px; /* Position left */
+}
+
+.knights-club-slider-button#nextButton {
+    right: 10px; /* Position right */
+}
+
+#welcomeMarquee {
+    background-color:rgb(5, 5, 59); /* Background color */
+    color: #ed5808; /* Text color */
+    font-size: 20px; /* Font size */
+    height: 50px; /* Increase height */
+    line-height: 50px; /* Center text vertically */
+    padding: 0 20px; /* Padding on sides */
+}
+
+
+#hui{
+    width: 1000px;
+    
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table thead tr {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.live-tournament, .past-tournaments, .upcoming-tournaments {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+

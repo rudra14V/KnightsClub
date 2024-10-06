@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - Chess Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff0000; /* Red */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .panel-team {
+            background-color: #5e4b8c; /* Powerful deep purple */
+            color: #fff;
+        }
+
+        .female-players {
+            background: linear-gradient(to bottom, #ffb3d9, #d5006d); /* Gradient from light pink to dark pink */
+            color: #000; /* Black text for contrast */
+            border: 2px solid #000; /* Black border for emphasis */
+        }
+
+        .female-players h2 {
+            color: #fff; /* White text for the heading */
+        }
+
+        .male-players {
+            background-color: #003366; /* Aggressive dark blue */
+            color: #fff;
+        }
+
+        .male-players h2 {
+            color: #fff; /* White text for the heading */
+        }
+
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .member {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            background-color: #000; /* Black background for members */
+            color: #fff; /* White text for contrast */
+        }
+
+        .member:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .member h3 {
+            margin: 10px 0 5px;
+        }
+
+        .member p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Chess Club Members</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="stats.html">Player Stats</a></li>
+                <li><a href="tournament.html">Tournaments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Panel Team Section -->
+        <section class="section panel-team">
+            <h2>Panel Team</h2>
+            <div class="members">
+                <!-- Panel Member 1 -->
+                <div class="member">
+                    <img src="images/panel1.jpg" alt="Panel Member 1">
+                    <h3>Sai Vivash Dara</h3>
+                    <p>Club Founder</p>
+                </div>
+                <!-- Panel Member 2 -->
+                <div class="member">
+                    <img src="images/panel2.jpg" alt="Panel Member 2">
+                    <h3>Akhil Bhuvanesh Reddy</h3>
+                    <p>Club Managing Executive</p>
+                </div>
+                <!-- Panel Member 3 -->
+                <div class="member">
+                    <img src="images/panel3.jpg" alt="Panel Member 3">
+                    <h3>Mihir Chandra Loke</h3>
+                    <p>Club lead</p>
+                </div>
+                <div class="member">
+                    <img src="images/panel1.jpg" alt="Panel Member 1">
+                    <h3>Sri Ram T</h3>
+                    <p>Club Managing Executive</p>
+                </div>
+                <!-- Panel Member 2 -->
+                <div class="member">
+                    <img src="images/panel2.jpg" alt="Panel Member 2">
+                    <h3>Gautham Sravan</h3>
+                    <p>Club Lead</p>
+                </div>
+                <!-- Panel Member 3 -->
+                <div class="member">
+                    <img src="images/panel3.jpg" alt="Panel Member 3">
+                    <h3>Ashwin Sharma</h3>
+                    <p>Tech Executive</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Female Players Section -->
+        <section class="section female-players">
+            <h2>Female Players</h2>
+            <div class="members">
+                <div class="member">
+                    <img src="images/member1.jpg" alt="Member 1">
+                    <h3>tejaswi</h3>
+                </div>
+                <div class="member">
+                    <img src="images/member2.jpg" alt="Member 2">
+                    <h3>moulya</h3>
+                </div>
+                <div class="member">
+                    <img src="images/member3.jpg" alt="Member 3">
+                    <h3>varsha</h3>
+                </div>
+                <div class="member">
+                    <img src="images/member4.jpg" alt="Member 4">
+                    <h3>tishya</h3>
+                </div>
+                <div class="member">
+                    <img src="images/member5.jpg" alt="Member 5">
+                    <h3>nikitha</h3>
+                </div>
+                <div class="member">
+                    <img src="images/member6.jpg" alt="Member 6">
+                    <h3>naseeb sindhu</h3>
+                </div>
+                <div class="member">
+                    <img src="images/member7.jpg" alt="Member 7">
+                    <h3>sevitha</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Male Players Section -->
+<section class="section male-players">
+    <h2>Male Players</h2>
+    <div class="members">
+        <div class="member">
+            <img src="images/member8.jpg" alt="Member 8">
+            <h3>Mihir Chandra Loke</h3>
+            <p>Type: International Rated Player</p>
+            <p>Classical: 1613 | Rapid: 1593</p>
+        </div>
+        <div class="member">
+            <img src="images/member9.jpg" alt="Member 9">
+            <h3>Akhil Bhuvanesh Reddy</h3>
+            <p>Type: International Rated Player</p>
+            <p>Classical: 1572 | Blitz: 1486</p>
+        </div>
+        <div class="member">
+            <img src="images/member10.jpg" alt="Member 10">
+            <h3>Sri Ram T</h3>
+            <p>Type: International Rated Player</p>
+            <p>Classical: 1499</p>
+        </div>
+        <div class="member">
+            <img src="images/member11.jpg" alt="Member 11">
+            <h3>Sai Vivash Dara</h3>
+            <p>Type: International Rated Player</p>
+            <p>Classical: 1468 | Rapid: 1452</p>
+        </div>
+        <div class="member">
+            <img src="images/member12.jpg" alt="Member 12">
+            <h3>Ashwin Sharma</h3>
+        </div>
+        <div class="member">
+            <img src="images/member13.jpg" alt="Member 13">
+            <h3>Tanesh Ashan</h3>
+        </div>
+        <div class="member">
+            <img src="images/member14.jpg" alt="Member 14">
+            <h3>Aadi Patel</h3>
+        </div>
+        <div class="member">
+            <img src="images/member15.jpg" alt="Member 15">
+            <h3>Kumaran Mahesh</h3>
+        </div>
+        <div class="member">
+            <img src="images/member16.jpg" alt="Member 16">
+            <h3>Gautham Sravan</h3>
+        </div>
+        <div class="member">
+            <img src="images/member17.jpg" alt="Member 17">
+            <h3>Sravan</h3>
+        </div>
+        <div class="member">
+            <img src="images/member18.jpg" alt="Member 18">
+            <h3>Abraham V Jose</h3>
+        </div>
+        <div class="member">
+            <img src="images/member19.jpg" alt="Member 19">
+            <h3>Rishab Jha</h3>
+        </div>
+        <div class="member">
+            <img src="images/member20.jpg" alt="Member 20">
+            <h3>Vineet Tiwari</h3>
+        </div>
+        <div class="member">
+            <img src="images/member21.jpg" alt="Member 21">
+            <h3>Prem Sahith</h3>
+        </div>
+        <div class="member">
+            <img src="images/member22.jpg" alt="Member 22">
+            <h3>Pradhyunn</h3>
+        </div>
+        <div class="member">
+            <img src="images/member23.jpg" alt="Member 23">
+            <h3>Sidharth</h3>
+        </div>
+        <div class="member">
+            <img src="images/member24.jpg" alt="Member 24">
+            <h3>Dheeraj</h3>
+        </div>
+        <div class="member">
+            <img src="images/member25.jpg" alt="Member 25">
+            <h3>Hemanth</h3>
+        </div>
+        <div class="member">
+            <img src="images/member26.jpg" alt="Member 26">
+            <h3>Venkata Akhil</h3>
+        </div>
+        <div class="member">
+            <img src="images/member27.jpg" alt="Member 27">
+            <h3>Chiraj</h3>
+        </div>
+    </div>
+</section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chess Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add aggressive colors and box decorations */
+        body {
+            background-color: #222; /* Dark background for contrast */
+            color: #fff; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-form {
+            background-color: rgba(255, 0, 0, 0.8); /* Bold red background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 400px; /* Max width for the form */
+            margin: auto; /* Center the form */
+        }
+
+        .contact-form:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 15px; /* Spacing between form groups */
+        }
+
+        input, textarea {
+            border: 2px solid #ffcc00; /* Aggressive yellow border color */
+            border-radius: 5px;
+            padding: 10px;
+            transition: border-color 0.3s ease;
+            width: 90%; /* Full width */
+            background-color: #333; /* Dark background for input fields */
+            color: #fff; /* Light text color for inputs */
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ff8c1a; /* Change border color on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        button {
+            background-color: #ff4500; /* Aggressive orange button color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; /* Full width for the button */
+        }
+
+        button:hover {
+            background-color: #ff0000; /* Bright red on hover */
+        }
+
+        .founder-contact {
+            background-color: rgba(255, 0, 0, 0.8); /* Bold red background for contact info */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .founder-contact h3 {
+            color: #ffcc00; /* Bright yellow for headings */
+        }
+
+        .founder-contact p {
+            margin: 5px 0; /* Margin for contact details */
+            color: #fff; /* White text color for contact details */
+        }
+
+        /* Animation for input boxes */
+        input, textarea {
+            animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start invisible */
+                transform: translateY(10px); /* Move up slightly */
+            }
+            to {
+                opacity: 1; /* End fully visible */
+                transform: translateY(0); /* Reset position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="stats.html">Player Stats</a></li>
+                <li><a href="tournament.html">Tournaments</a></li> <!-- Links to the Tournaments page -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form" id="hui">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="founder-contact">
+            <h3>Contact Details</h3>
+            <p>Name: Sai Vivash Dara</p>
+            <p>Email: imv25126636@gmail.com</p>
+            <p>Phone: +91 7207710369</p>
+            <p>Instagram: <a href="https://instagram.com/the_knightsclub" target="_blank">@the_knightsclub</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chess Club. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
